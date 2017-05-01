@@ -5,7 +5,7 @@
             /*color: white !important;*/
             color: #EBEBEB!important;
             background-color: #282C43 !important;
-
+            font-family: 'Montserrat', sans-serif;
         }
         /* General */
         h1,
@@ -44,7 +44,6 @@
             /*border: white 10px solid;*/
             overflow: hidden;
         }
-
         .cartoon-img {
             display: inline-block;
             height: 300px;
@@ -54,20 +53,68 @@
 
         #leftBox {
           text-align: left;
+          font-weight: lighter;
         }
 
         #middleBox{
-          padding: 10px 20px;;
+          padding: 10px 20px;
+          padding-bottom: 80px;
+          border-style: solid;
+          border-width: 0 0 1px 0;
+          border-color: white;
         }
         #bottomBox{
           margin: 0 auto;
           width: 80%;
+          /*background-color: #EEEEEE;*/
         }
 
         .middle-layer {
             margin: 0 auto;
             width: 80%;
+            padding-top:  20px;
+            padding-bottom:  80px;
             /*background-color: #282C43;*/
+        }
+        .skills-layer {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .project-layer {
+            /*margin: 0 auto;*/
+            background-color: #EEEEEE;
+            height: 1000px;
+            color: black;
+        }
+        .project-box {
+            border-color: black 10px solid;
+            color: black;
+            padding: 20px;
+        }
+        .project-box-item {
+            border-color: black 10px solid;
+            color: black;
+            padding: 20px;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+        }
+        .project-box-bottom {
+            height: 150px;
+            padding-top: 30px;
+            font-size: 20px;
+            border-color: black 10px solid;
+            color: black;
+            background-color: white;
+            /*padding: 20px;*/
+            /*background-color: black;*/
+            /*width: 100%;*/
+        }
+        .project-label {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 30px;
+            /*background-color: white !important;*/
         }
         /* Skill Boxes */
 
@@ -76,9 +123,12 @@
             height: 200px;
         }
 
-        .skills-layer {
-            width: 100%;
-            margin: 0 auto;
+        .skill-label{
+          padding-top:20px;
+          padding-bottom:20px;
+          /*font-weight: bold;*/
+          font-size: 18px;
+
         }
 
         .skills-box {
