@@ -1,0 +1,101 @@
+
+        body {
+            padding: 0;
+            margin: 0;
+            /*color: white !important;*/
+            color: #EBEBEB!important;
+            background-color: #282C43 !important;
+
+        }
+        /* General */
+        h1,
+        h3 {
+            color: white;
+        }
+        h1{
+          font-size: 26px;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .landing-page{
+          background-image: url('../../landing-page.jpg');
+          background-size:  cover;
+          /*1000px auto;*/
+          /*width: 100%;*/
+          height: 1000px;;
+        }
+        .white-container{
+          color:black;
+        }
+        /*Cartoon*/
+        .cartoon{
+            /*background-color: #282C43 !important;*/
+            width: 60%;
+            margin: 0 auto;
+            background-color: #282C43 !important;
+        }
+        .cartoonContainer {
+            /*width: 45%;*/
+            width: 60%;
+            margin: 0 auto;
+            /*height: 300px;*/
+            /*border: white 10px solid;*/
+            overflow: hidden;
+        }
+
+        .cartoon-img {
+            display: inline-block;
+            height: 300px;
+            weight : 300px;
+            width: auto;
+        }
+
+        #leftBox {
+          text-align: left;
+        }
+
+        #middleBox{
+          padding: 10px 20px;;
+        }
+        #bottomBox{
+          margin: 0 auto;
+          width: 80%;
+        }
+
+        .middle-layer {
+            margin: 0 auto;
+            width: 80%;
+            /*background-color: #282C43;*/
+        }
+        /* Skill Boxes */
+
+        .icon {
+            width: 200px;
+            height: 200px;
+        }
+
+        .skills-layer {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .skills-box {
+            display: inline-block;
+            width: 40%;
+            border: white 0.1em solid;
+            padding: 10px 20px;
+        }
+
+        .skills-box-lower-container {
+            display: block;
+            width: 50%;
+            padding: 10px 20px;
+        }
+
+        .skills-box-lower {
+            display: inline-block !important;
+            width: 30%;
+            padding: 10px 20px;
+        }
