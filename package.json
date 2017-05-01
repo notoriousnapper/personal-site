@@ -1,0 +1,17 @@
+{
+  "name": "personal-site-jesse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modules for personal website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jesse Ren <jeren.neurogen@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.6.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {}
+}
