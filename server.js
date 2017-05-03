@@ -3,7 +3,6 @@ var cors = require('cors');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser')
-
 // Booking.js still needs access to jquery, so make sure its available
 // var $ = require('jquery');
 // app.listen(process.env.PORT || 8000, function(){

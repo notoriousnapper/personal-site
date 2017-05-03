@@ -1,0 +1,15 @@
+.footer-layer{
+  background-color: #D8D8D8;
+}
+
+#contactLine{
+  text-align: center;
+  padding-bottom: 30px;
+  color: black;
+}
+.social-icon{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
