@@ -6,11 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jesse's Personal Site</title>
     <link rel="shortcut icon" href="./public/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/about.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/project.css">
 </head>
 
 <body>
-
     <div class="landing-page">
+      <nav class="navbar navbar-default" role="navigation" style="border: none;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-clear collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+          <!-- <li><a style="color:white; font-family: 'Roboto';" href="#">PROJECTS</a></li> -->
+            <li>
+              <a href="#">
+                  <img id="logo" src="public/img/self-logo.png"> </img>
+              </a>
+          <!-- <li><a style="color:white;" href="#">ABOUT</a></li> -->
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+
+          <div class="landing-text">
+          Computer Science Undergraduate at UCSD <br/>
+            Dedicated to Web Development <br/>
+             <!-- Curious where the dragons roam -->
+            </div>
+
+
+
 
     </div>
     <div class="middle-layer">
@@ -26,7 +61,8 @@
                       different vantage points of
                       customers and clients.
                       The goal: Delight the user,
-                      Satisfy the clients goals, and have a blast doing it all.
+
+                      satisfy the client, and have a blast doing it all.
                   </p>
                     </div>
                     <div class="col-sm-4">
@@ -43,7 +79,7 @@
                         <h3> Skills </h3>
                         <img class="icon center-block" src="skill-logo.png" />
                         <div class="skill-label center-block">
-                        Front-End, Back-End, and a little Design
+                        Full Stack, and a Little Design
                         </div>
                         <div class="container">  <!--Inner Container -->
                           <div class=" col-sm-1 text-left">
@@ -55,7 +91,7 @@
                             <p>    ReactJS, HTML/CSS, JS, C++
                               <br/> Webpack/ Vim
                               <br/> NodeJS, MongoDB, SQL
-                              <br/> Affinity, Sketch
+                              <br/> Affinity, Sketch, Balsamique
                             </p>
                           </div>
                        </div>  <!-- End Inner Container -->
@@ -85,6 +121,11 @@
                           </div>
                        </div>  <!-- End Inner Container -->
                     </div>
+
+                <div class="resume-button col-sm-12">
+                <button id="resume"> <a href="http://www.yourfilehostingservice.com/yourresume.pdf">
+                  Download Resume </a> </button>
+              </div>
                 </div>
             </div>
 
@@ -102,7 +143,6 @@
                   Projects
                 </div>
 
-
                 <div id="bottomBox" class="row text-center" style="margin: 0 auto; width: 90%;"  > <!-- Style not working unless inline-->
                     <div class=" project-box col-sm-6">
                         <div class="project-box-item"></div>
@@ -119,7 +159,13 @@
                        </div>  <!-- End Inner Container -->
                     </div>
                     <div class=" project-box col-sm-6 ">
-                        <div class="project-box-item"></div>
+                        <a href="www.mobewash.com">
+                            <div class="project-box-item"
+                          style="background-image: url('public/img/mobewash.png');
+                          background-size: cover">
+                        </div>
+                      </a>
+
                         <div class="center-block project-box-bottom">
                           <strong> MobeWash </strong>
                           <br/>
@@ -135,8 +181,6 @@
                     </div>
                 </div>
             </div>   <!-- of Projects Layer -->
-
-
   <div class="about-layer">  <!-- Start of About Layer -->
               <div class="project-label jumbotron text-center">
                 <div id="profile-pic">
@@ -153,7 +197,7 @@
 
   <div class="footer-layer" >  <!-- Start of About Layer -->
                 <div id="bottomBox" class=" footer-layer row text-center" style="margin: 0 auto; width: 90%;"  > <!-- Style not working unless inline-->
-                    <div class=" project-box col-sm-3">
+                    <!-- <div class=" project-box col-sm-3">
                         <div class="social-icon center-block project-box-bottom">
                         </div>
                     </div>
@@ -164,11 +208,12 @@
                     <div class=" project-box col-sm-3 ">
                         <div class="social-icon center-block project-box-bottom">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div id="contactLine">
-                © 2017 Jesse Ren     Artwork and Logo.
+                © 2017 Jesse Ren
+                jeren@ucsd.edu
               </div>
           </div>   <!-- End of Footer-->
             <!-- End of projects -->
@@ -188,8 +233,5 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
   <!-- Optional theme -->
-  <link rel="stylesheet" href="public/css/styles.css">
-  <link rel="stylesheet" href="public/css/about.css">
-  <link rel="stylesheet" href="public/css/footer.css">
 </body>
 </html>

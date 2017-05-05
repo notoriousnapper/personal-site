@@ -1,0 +1,37 @@
+.project-layer {
+    background-color: #EEEEEE;
+    height: 600px;
+    color: black;
+}
+
+.project-box {
+    border-color: black 10px solid;
+    color: black;
+    padding: 20px;
+}
+
+.project-box-item {
+    border-color: black 10px solid;
+    color: black;
+    /*padding: 20px;*/
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+
+.project-box-bottom {
+    height: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+    border-color: black 10px solid;
+    color: black;
+    background-color: white;
+}
+
+.project-label {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    /*background-color: white !important;*/
+}
