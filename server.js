@@ -18,5 +18,7 @@ app.get('/resume', function(req, res){
   res.download(file); // Set disposition and send it.
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
+//     console.log('Server running on some port...');
+// });3000);
 console.log("Running at Port 3000");
