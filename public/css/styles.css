@@ -98,7 +98,13 @@ a:active {
 -o-background-size: cover;
 background-size: cover;
 
-    background-image: url('../../public/img/landing-page.png');
+background-image: url('../../public/img/landing-page.png');
+/*background-attachment: fixed !important;
+background-position: center !important;
+background-repeat: no-repeat !important;
+background-size: cover;
+height: 100%;*/
+
     /*background-image: url('../../landing-page-v2.jpg');*/
     /*1000px auto;*/
     /*width: 100%;*/
