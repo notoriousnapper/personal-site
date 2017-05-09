@@ -14,4 +14,6 @@
   color: black;
   font-size: 18px;
   text-align: justify;
+  width: 40%;
+  margin: 0 auto !important;
 }

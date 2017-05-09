@@ -1,22 +1,22 @@
-var express = require('express');
-var cors = require('cors');
-var app = express();
-var path = require('path');
-var bodyParser = require('body-parser')
-// Booking.js still needs access to jquery, so make sure its available
-// var $ = require('jquery');
-// app.listen(process.env.PORT || 8000, function(){
-//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-// });
-//
-//
-//
-// // Servce static files to client
-// app.use(express.static(path.join(__dirname, 'public')));
+var express = require("express");
+var app     = express();
+var path    = require("path");
 
-
-var connect = require('connect');
-var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(process.env.PORT || 3000, function(){
-    console.log('Server running on some port...');
+app.use("/public", express.static(path.join(__dirname, 'public'))); // Serve static files
+app.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
 });
+
+app.get('/resume', function(req, res){
+  console.log("Resume downloaded");
+  var filename = "Resume-May-2017.pdf";
+  // var filename = req.originalUrl.replace(pattern , ""); // Rid of %20
+  // Need regex, or only replaces first
+  console.log("parse url" + filename);
+  console.log(filename);
+  var file = __dirname + '/uploads/' + filename;
+  res.download(file); // Set disposition and send it.
+});
+
+app.listen(3000);
+console.log("Running at Port 3000");
