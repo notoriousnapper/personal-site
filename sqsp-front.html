@@ -1,0 +1,97 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width">
+<!-- Injection of jquery in header page for this file -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<div class="buttonContainer row text-center center-block" style="margin: 0 auto !important; text-align: center;">
+<div class="col-sm-4" id="Alexandria" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Alexandria     </button></div>
+<div class="col-sm-4" id="Avenue" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Avenue of Science </button></div>
+<div class="col-sm-4" id="Innovation" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Innovation Drive</button></div>
+<div class="col-sm-4" id="Water" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Wateridge Vista </button></div>
+<div class="col-sm-4" id="Broadway" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Downtown Broadway</button></div>
+</div> <!-- end of container -->
+ <iframe id="main" data-src="http://my.url" src="about:blank"width="100%" height="800" frameBorder="0">
+ </iframe>
+<script>
+ window.onload = function() {
+
+
+ var Alexandria = document.getElementById("Alexandria");
+ var Avenue = document.getElementById("Avenue");
+ var Innovation = document.getElementById("Innovation");
+ var Water = document.getElementById("Water");
+ var Broadway = document.getElementById("Broadway");
+
+
+
+
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+ if (w < 690) {
+   console.log(w);
+ }
+
+ var main = document.getElementById("main");
+ var space = document.getElementsByClassName("spacer-block-spacer");
+
+ Alexandria.addEventListener("click", function(){
+   console.log("Alexandria button clicked");
+     Alexandria.style.display = 'none';
+     Avenue.style.display = 'none';
+     Innovation.style.display = 'none';
+     Water.style.display = 'none';
+     Broadway.style.display = 'none';
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=1027941";
+   });
+ Avenue.addEventListener("click", function(){
+   console.log("Avenue button clicked");
+     Alexandria.style.display = 'none';
+     Avenue.style.display = 'none';
+     Innovation.style.display = 'none';
+     Water.style.display = 'none';
+     Broadway.style.display = 'none';
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=874123";
+});
+ Innovation.addEventListener("click", function(){
+   console.log("Innovation button clicked");
+     Alexandria.style.display = 'none';
+     Avenue.style.display = 'none';
+     Innovation.style.display = 'none';
+     Water.style.display = 'none';
+     Broadway.style.display = 'none';
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=1200966";
+});
+ Water.addEventListener("click", function(){
+   console.log("Innovation button clicked");
+     Alexandria.style.display = 'none';
+     Avenue.style.display = 'none';
+     Innovation.style.display = 'none';
+     Water.style.display = 'none';
+     Broadway.style.display = 'none';
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=1200999";
+});
+ Broadway.addEventListener("click", function(){
+   console.log("Innovation button clicked");
+     Alexandria.style.display = 'none';
+     Avenue.style.display = 'none';
+     Innovation.style.display = 'none';
+     Water.style.display = 'none';
+     Broadway.style.display = 'none';
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=1201014";
+
+});
+};
+</script>
+
+
+mongoexport -h ds147900.mlab.com:47900 -d mobewash -c ratings -u nefarioustrapper -p hGotPa#7r1> -o ratings.csv --csv -f

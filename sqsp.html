@@ -1,0 +1,72 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<meta name="viewport" content="width=device-width">
+<!-- Injection of jquery in header page for this file -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<div class="row text-center center-block" style="margin: 0 auto !important; text-align: center;">
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Alexandria     </button></div>
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > DayBreak Games     </button></div>
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Alexandria     </button></div>
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Alexandria     </button></div>
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > DayBreak Games     </button></div>
+<div class="col-sm-4" id="ondemand" style="padding: 20px 10px; text-align:center; margin: 0 auto !important; "><button class="mobile cta-button" > Alexandria     </button></div>
+ <iframe id="main" data-src="http://my.url" src="about:blank"width="100%" height="800" frameBorder="0">
+ </iframe>
+</div> <!-- end of container -->
+<script>
+ window.onload = function() {
+ var ondemand = document.getElementById("ondemand");
+ var corporate = document.getElementById("corporate");
+ var contain = document.getElementById("containa");
+   // Initial
+   //contain.style="padding-left: 17%";
+   //contain.style.paddingLeft = "50px";
+ var box = document.getElementsByClassName("floating-box");
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+ if (w < 690) {
+  //alert('Less than 960');
+   console.log("Item is mobile and " + contain);
+   console.log(w);
+   contain.style='padding-left: 0px;';// margin-left: -20%';
+   //ondemand.style='width: 100%;';// margin-left: -20px;';
+   //corporate.style='width: 100%;';// margin-left: -20px;';
+ }
+ var main = document.getElementById("main");
+ // Calling early because of weird error, temporary fix
+ var space = document.getElementsByClassName("spacer-block-spacer");
+
+   var info1 = document.getElementById("info1");
+   var info2 = document.getElementById("info2");
+
+ ondemand.addEventListener("click", function(){
+   console.log("onedemand button clicked");
+     ondemand.style.display = 'none';
+     corporate.style.display = 'none';
+     info1.style.display = 'none';
+     info2.style.display = 'none';
+       contain.style = "padding-left: 0px";
+       main.display = 'block';
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=1027941";
+   });
+
+ corporate.addEventListener("click", function(){
+   console.log("corporate button clicked");
+     ondemand.style.display = 'none';
+     corporate.style.display = 'none';
+       main.display = 'block';
+         info1.style.display = 'none';
+     info2.style.display = 'none';
+       contain.style = "padding-left: 0px";
+       main.src="https://app.acuityscheduling.com/schedule.php?owner=12695911&calendarID=874123";
+});
+ //alert(JSON.stringify(corporate, null, 4));
+};
+</script>
