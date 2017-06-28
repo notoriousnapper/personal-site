@@ -1,8 +1,5 @@
 module.exports = {
   entry: [
-    './app/index.js',
-    './public/css/style.css',
-    './public/css/form.css'
   ],
 
   output: {
@@ -11,8 +8,9 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      // { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+      // { test: /\.css$/, loader: "style-loader!css-loader" },
+      {test: /\.scss$/,loader:"css!sass-loader-once"}
     ]
   },
   resolve: {

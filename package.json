@@ -13,5 +13,7 @@
     "connect": "^3.6.1",
     "express": "^4.15.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sass-loader-once": "0.0.2"
+  }
 }
