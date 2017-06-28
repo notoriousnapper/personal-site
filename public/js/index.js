@@ -67,6 +67,10 @@ $(document).ready(function(){
     }, 1000);
 
 
+    // Plugin
+    window.sr = ScrollReveal();
+    sr.reveal('#bottomBox');
+    // sr.reveal('.bar');
 
 });
 
