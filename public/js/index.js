@@ -33,10 +33,8 @@ setTimeout(function() {
 
 
 
-// Hide Content
 
 // Hiding Content
-// $('.content').hide();
 console.log("Fading In");
 $(document).ready(function(){
     setTimeout(function() {
@@ -44,14 +42,32 @@ $(document).ready(function(){
         // $('.path').css({fill : 'white', transition: "4.0s"});
       }, 3000);
       setTimeout(function() {
+            // Load Background and text
             var $img = "http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png";
-            $('.content').fadeIn(3000);
-            $('.landing-page').fadeTo('slow', 0.3, function()
-              {
-                  $(this).css('background-image', 'url(' + $img + ')');
-              }).delay(1000).fadeTo('slow', 1);
+            $('.content').fadeIn(4000);
+            $('.landing-text').fadeIn(2000);
+              setTimeout(function() {
+                $('.landing-page').fadeIn('slow', 1.3, function()
+                  {
+                      $(this).css('background-image', 'url(' + $img + ')');
+                  }).delay(1000).fadeIn('slow', 1.3);
+              }, 1000);
+            // setTimeout(function() {
+            //   // XHR to request a JS and a CSS
+            //   var xhr = new XMLHttpRequest();
+            //   xhr.open('GET', $img);
+            //   // preload image
+            //   // new Image().src = "http://domain.tld/preload.png";
+            //   // $('.landing-page').fadeIn('slow', 1.3, function()
+            //       $('.landing-page').css('background-image', 'url(' + $img + ')');
+            //       $('.landing-page').fadeIn('slow', 1.3, function(){
+            //     }, 3000);
+            //   });
       }, 3000);
     }, 1000);
+
+
+
 });
 
 function loadAnimations(){

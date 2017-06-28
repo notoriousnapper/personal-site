@@ -88,6 +88,8 @@ a:active {
 }
 
 .landing-text{
+  /*visibility: hidden;*/
+  display: none;
   font-size: 26px;
   font-family: 'Montserrat';
   padding-top: 100px; text-align: center; margin: 0 auto !important;
@@ -100,14 +102,13 @@ a:active {
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-/*background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png');*/
 /*background-attachment: fixed !important;
 background-position: center !important;
 background-repeat: no-repeat !important;
 background-size: cover;
 height: 100%;*/
 
-    /*background-image: url('../../landing-page-v2.jpg');*/
+    /*background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png');*/
     /*1000px auto;*/
     /*width: 100%;*/
     height: 1000px;
@@ -237,10 +238,3 @@ height: 100%;*/
 
 
 /* Animations */
-#animation {
-  display: hidden;
-}
-
-.hide {
-  display: hidden;
-}
