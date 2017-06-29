@@ -1,3 +1,4 @@
+
 var pathNodes = document.querySelectorAll('.path');
 console.log("About to animate! : " + pathNodes);
 var s = Snap("#logo");
@@ -37,6 +38,9 @@ setTimeout(function() {
 // Hiding Content
 console.log("Fading In");
 $(document).ready(function(){
+    /* Scrolling Code */
+
+
     setTimeout(function() {
       setTimeout(function() {
         // $('.path').css({fill : 'white', transition: "4.0s"});
@@ -52,27 +56,35 @@ $(document).ready(function(){
                       $(this).css('background-image', 'url(' + $img + ')');
                   }).delay(1000).fadeIn('slow', 1.3);
               }, 1000);
-            // setTimeout(function() {
-            //   // XHR to request a JS and a CSS
-            //   var xhr = new XMLHttpRequest();
-            //   xhr.open('GET', $img);
-            //   // preload image
-            //   // new Image().src = "http://domain.tld/preload.png";
-            //   // $('.landing-page').fadeIn('slow', 1.3, function()
-            //       $('.landing-page').css('background-image', 'url(' + $img + ')');
-            //       $('.landing-page').fadeIn('slow', 1.3, function(){
-            //     }, 3000);
-            //   });
       }, 3000);
     }, 1000);
 
 
-    // Plugin
-    window.sr = ScrollReveal();
-    sr.reveal('#bottomBox');
-    // sr.reveal('.bar');
+
+
+
 
 });
+
+  // $(window).on('load', function(){
+  //     var div = $("#divToShowHide");
+  //     // var div = document.getElementById('contactLine');
+  //     console.log("div is: " + div);
+  //     var pos = div.position();
+  //     // var pos =  getPosition(div);
+  //     pos.top = 1000;
+  //     console.log("Position is: " + JSON.stringify(pos, null, 4));
+  //     $(window).scroll(function () {
+  //       var windowpos = $(window).scrollTop();
+  //       console.log("Window Pos is: " + windowpos);
+  //          //Now if you scroll more than 100 pixels vertically change the class to AfterScroll
+  //          // I am taking 100px scroll, you can take whatever you need
+  //       if (windowpos >= (pos.top - 100)) {
+  //           div.addClass("after-scroll");
+  //           // alert("Worked");
+  //       }
+  //    });
+  // });
 
 function loadAnimations(){
   document.getElementById("logo").style.opacity = 1;
@@ -98,4 +110,45 @@ function loadAnimations(){
     // Go!
     path.style.strokeDashoffset = '0';
   });
+}
+
+
+
+
+/* Helper Function */
+// Helper function to get an element's exact position
+function getPosition(el) {
+  var xPos = 0;
+  var yPos = 0;
+
+  while (el) {
+    console.log("div again is: " + el);
+    if (el.tagName == "BODY") {
+      // deal with browser quirks with body/window/document and page scroll
+      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+      var yScroll = el.scrollTop || document.documentElement.scrollTop;
+
+      xPos += (el.offsetLeft - xScroll + el.clientLeft);
+      yPos += (el.offsetTop - yScroll + el.clientTop);
+    } else {
+      // for all other non-BODY elements
+      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+    }
+
+    el = el.offsetParent;
+  }
+  return {
+    x: xPos,
+    y: yPos
+  };
+}
+
+// deal with the page getting resized or scrolled
+window.addEventListener("scroll", updatePosition, false);
+window.addEventListener("resize", updatePosition, false);
+
+function updatePosition() {
+  // add your code to update the position when your browser
+  // is resized or scrolled
 }
