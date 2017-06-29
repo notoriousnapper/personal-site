@@ -16,19 +16,20 @@
     /*padding: 20px;*/
     background-color: black;
     width: 100%;
-    height: 300px;
+    height: 500px;
     cursor: pointer;
 }
 
 .project-box-bottom {
-    /*height: 100px;*/
     padding-top: 20px;
     font-size: 30px !important;
     border-color: black 10px solid;
     color: black;
     background-color: white;
     padding-bottom: 0px !important;
-    text-align: justify
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 .project-box-bottom-2{
     /*padding-top: 20px;*/
@@ -37,7 +38,8 @@
     color: black;
     background-color: white;
     padding-bottom: 35px;
-    text-align: justify
+    text-align: justify;
+    padding: 0 30px;
 }
 
 .project-label {
@@ -45,4 +47,27 @@
     text-align: center;
     font-size: 50px;
     /*background-color: white !important;*/
+}
+
+
+
+/* Buttons */
+.viewBtn {
+    margin: 0 auto !important;
+    color: white !important;
+    /*padding: 15px 22px;*/
+    height: 60px;
+    width: 120px;
+    border: white 1px solid;
+    border-radius: 10px;
+    background-color: #E66373;
+    text-align: center;
+}
+.viewBtn a{
+  color: white;
+  font-size: 20px;
+}
+
+.view-strong {
+  font-size: 30px;
 }

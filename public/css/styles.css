@@ -81,6 +81,7 @@ a:active {
     text-decoration: none !important;
 }
 
+
 #resume {
     margin: 0 auto !important;
     background-color: #282C43 !important;
@@ -103,16 +104,19 @@ a:active {
   display: none;
   font-size: 26px;
   font-family: 'Montserrat';
+  font-weight: 300;
   padding-top: 100px; text-align: center; margin: 0 auto !important;
   color: white;
 }
 
 .landing-page {
   background: #282c43 no-repeat center center fixed;
+  /*transition: opacity 1500ms ease-in-out;*/
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+  transition: background 1.5s linear;
 /*background-attachment: fixed !important;
 background-position: center !important;
 background-repeat: no-repeat !important;

@@ -49,14 +49,16 @@ $(document).ready(function(){
             // Load Background and text
             var $img = "http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png";
             $('.content').fadeIn(4000);
-            $('.landing-text').fadeIn(2000);
+            $('.landing-text').fadeIn(1000);
               setTimeout(function() {
-                $('.landing-page').fadeIn('slow', 1.3, function()
-                  {
-                      $(this).css('background-image', 'url(' + $img + ')');
-                  }).delay(1000).fadeIn('slow', 1.3);
-              }, 1000);
-      }, 3000);
+                $('.landing-page').css('background-image', 'url(' + $img + ')');
+                $('.landing-page').fadeIn('slow', 2.3);
+              //   $('.landing-page').fadeOut('slow', function()
+              //     {
+              //         $(this).css('background-image', 'url(' + $img + ')');
+              //     }).delay(1000).fadeIn('slow', 1.3);
+              }, 2000);
+      }, 1000);
     }, 1000);
 
 
