@@ -18,6 +18,7 @@
     width: 100%;
     height: 500px;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .project-box-bottom {
