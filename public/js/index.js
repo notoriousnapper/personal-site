@@ -9,7 +9,7 @@ var border = s.select("#border");
 document.getElementById("logo").style.opacity = 0;
 document.getElementById("border").style.opacity = 0;
 setTimeout(function() {
-  loadAnimations();
+loadAnimations();
   setTimeout(function() {
     // border.animate({
     //   r: 50,
@@ -85,11 +85,9 @@ $(document).ready(function(){
   // });
 
 function loadAnimations(){
-  document.getElementById("logo").style.opacity = 1;
   var i = 0;
   pathNodes.forEach(function animatePath (path){
     i++;
-    if (i==1) return;
     console.log(i + " : " + JSON.stringify(path, null, 4));
     var length = path.getTotalLength();
     var speed = (i > 1) ? 1.8 : 3.15;   // Ratio of 1 to 1.75 for matching speed
@@ -106,6 +104,10 @@ function loadAnimations(){
     path.style.transition = path.style.WebkitTransition =
       'stroke-dashoffset ' + speed + 's ease-in-out';
     // Go!
+    if(i==1){
+      // Timing
+      document.getElementById("logo").style.opacity = 1;
+    }
     path.style.strokeDashoffset = '0';
   });
 }
