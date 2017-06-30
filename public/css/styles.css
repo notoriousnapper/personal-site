@@ -117,6 +117,7 @@ a:active {
 -o-background-size: cover;
 background-size: cover;
   transition: background 1.5s linear;
+  background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png');
 /*background-attachment: fixed !important;
 background-position: center !important;
 background-repeat: no-repeat !important;
