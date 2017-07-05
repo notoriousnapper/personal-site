@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="public/css/project.css">
     <link rel="stylesheet" href="public/css/styles.css?v=<?=time();?">
     <link rel="stylesheet" href="public/css/animation.css">
+    <link rel="stylesheet" href="public/css/hover.css">
     <!-- From http://bouncejs.com/ -->
 </head>
 
@@ -198,53 +199,43 @@
 
         <!-- Start of Projects -->
         <div class="project-layer">
-            <div style="color:#454545" class="project-label jumbotron text-center">
+            <div style="background-color: #282C43; color: white;" class="project-label jumbotron text-center">
                 PROJECTS
             </div>
 
             <div id="bottomBox" class="row text-center" style="margin: 0 auto; width: 90%;">
+                        <ul class="ch-grid">
+            	<li class="scroll-left">
+            		<div class="ch-item ch-img-1">
+            			<div class="ch-info">
+            				<h3>Portfolio</h3>
+            				<p>by Jesse Ren. Custom coded and drawn graphics <a href="http://drbl.in/eOPF">View on Dribbble</a></p>
+            			</div>
+            		</div>
+            	</li>
+            	<li class="scroll-bottom">
+                <a href="https://projects.invisionapp.com/share/6TBWNHKR4#/screens/235966179">
+              		<div class="ch-item ch-img-2">
+              			<div class="ch-info">
+              				<h3> Matchrest</h3>
+              				<p> Reimagining Sleeping <a href="http://drbl.in/eKMi"> Wireframes and Demo </a></p>
+              			</div>
+              		</div>
+                </a>
+            	</li>
+            	<li class="scroll-right">
+                <a href="http://mobewash.com">
+              		<div class="ch-item ch-img-3">
+              			<div class="ch-info">
+              				<h3>MobeWash</h3>
+              				<p>Waterless Car Wash <a href="http://drbl.in/ekhp"> Created Website, webservices</a></p>
+              			</div>
+              		</div>
+                </a>
+            	</li>
+            </ul>
                 <!-- Style not working unless inline-->
-                <div class=" project-box col-sm-6"> <!-- Project Begins here -->
-                  <div class="scroll-left" data-sr> <!-- Project Stuff -->
-                    <a href="https://projects.invisionapp.com/share/6TBWNHKR4#/screens/235966179">
-                      <div class="project-box-item" style="background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498777165/matchrest-thumbnail_vn8rpj.png');
-                            background-size: cover"></div>
-                    </a>
-                    <div class="center-block project-box-bottom">
-                                 <strong class="view-strong"> MatchRest </strong>
-                               <br/>
-                                Social Sleep App and Goal Setter
-                                <br/>
-                                Tasks: Storyboarding, Lo-fi and Hi-fi wireframes, graphic design, and InvisionApp Demo
-                               <br/>
-                               <br/>
-                            <a href="https://projects.invisionapp.com/share/6TBWNHKR4#/screens/235966179"><button class="viewBtn" class="view-2">  Demo </button></a>
-                               <br/>
-                    </div> <!-- End Scroll -->
-                  </div> <!-- End Scroll -->
-                    <!-- End Inner Container -->
-                </div>
-                <div class=" project-box col-sm-6 ">
-                  <div class="scroll-left" data-sr> <!-- Project Stuff -->
-                    <a href="https://www.mobewash.com/">
-                        <div class="project-box-item" style="background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498604415/mobewash-min_jcyttf.png');
-                          background-size: cover">
-                        </div>
-                    </a>
-                    <div class="center-block project-box-bottom">
-                                 <strong class="view-strong"> MobeWash </strong>
-                               <br/>
-                               Waterless B2B Mobile Car Wash
-                                <br/>
-                                Tasks: Lo-fi wireframes, custom code and integrations into squarespace site
-                               <br/>
-                               <br/>
-                            <a href="http://mobewash.com"> <button class="viewBtn" class="view-2"> View </button></a>
-                               <br/>
-                    </div> <!-- End Scroll -->
-                    </div> <!-- End Scroll -->
-                  </div> <!-- End Scroll -->
-                  </div> <!-- End Scroll -->
+        </div>
         </div>
         <!-- of Projects Layer -->
 
@@ -257,6 +248,7 @@
                 </div>
                 <div class="about-font row text-center">
                     <!-- Style not working unless inline-->
+                    Congratulations!  You made it to the bottom.
                     Jesse Ren is an computer science and business student at UCSD. He is in his final year at the University of California, San Diego, and plans to move to the bay area to immerse himself in the center of technology and start-ups. Through various engineering
                     and leadership opportunities, he does his best to help students get early project experience and mentorship, and further the culture of creativity and innovation at UCSD.
                 </div>
@@ -291,10 +283,14 @@
 
             </div>
             <!-- End of content -->
-        </div>
+
+
+
+            <!-- Testing -->
+                    </div>
+        <!-- End of Testing-->
         <!-- End of Footer-->
         <!-- End of projects -->
-
 
 
         <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
@@ -325,6 +321,11 @@
             });
 
 
+            sr.reveal('.scroll-bottom', {
+                origin: 'bottom',
+                opacity: 0,
+                duration: 2000
+            });
 
         </script>
 

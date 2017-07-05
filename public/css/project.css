@@ -1,7 +1,8 @@
 .project-layer {
-    background-color: #EEEEEE;
+    background-color: #282C43;
     /*height: 600px;*/
     color: black;
+    margin-bottom: 200px;
 }
 
 .project-box {
@@ -26,7 +27,7 @@
     font-size: 22px;
     border-color: black 10px solid;
     color: black;
-    background-color: white;
+    /*background-color: white;*/
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto;

@@ -152,3 +152,18 @@ function updatePosition() {
   // add your code to update the position when your browser
   // is resized or scrolled
 }
+
+
+$("#match-rest").on({
+    mouseenter: function () {
+        //stuff to do on mouse enter
+        // $('.content').fadeOut(500);
+        $(this).fadeOut(1000);
+        // alert("Yo");
+    },
+    mouseleave: function () {
+        //stuff to do on mouse leave
+        $(this).fadeIn(500);
+
+    }
+});

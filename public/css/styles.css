@@ -1,14 +1,5 @@
  /* set fill for before and for during hover */
 
- #divToShowHide {
-   background-color: red;
-   /*display: block;*/
-   margin: 0 auto;
-   font-size: 30px;
-   color: black;
-   width: 500px;
-   height: 500px;
- }
 
 html, body {
     width: 100%;
@@ -58,6 +49,7 @@ a:visited {
 a:hover {
     color: black;
     color: #282C43 !important;
+    text-decoration: none !important;
 }
 
 
@@ -84,7 +76,8 @@ a:active {
 
 #resume {
     margin: 0 auto !important;
-    background-color: #282C43 !important;
+    /*background-color: #282C43 !important;*/
+    background-color: white !important;
     color: white !important;
     padding: 15px 22px;
     border: white 1px solid;
@@ -266,3 +259,16 @@ height: 100%;*/
   width: 100px;
   display: block;
 }
+
+/*#match-rest:hover {
+  background: white !important;
+}*/
+ #divToShowHide {
+   background-color: red;
+   /*display: block;*/
+   margin: 0 auto;
+   font-size: 30px;
+   color: black;
+   width: 500px;
+   height: 500px;
+ }
