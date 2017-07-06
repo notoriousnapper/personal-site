@@ -39,7 +39,7 @@
 
 /* Background images */
 .ch-img-1 {
-	background-image: url('http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png');
+	background-image: url('http://res.cloudinary.com/mobewash/image/upload/c_scale,w_210/v1498604418/landing-page-min_pqzgwc.png');
   background-size: cover;
 }
 .ch-img-1:hover {
@@ -49,7 +49,7 @@
 }
 
 .ch-img-2 {
-	background-image: url('http://res.cloudinary.com/djmk9vktk/image/upload/v1499292725/logo_smrotm.png');
+	background-image: url('http://res.cloudinary.com/mobewash/image/upload/c_scale,q_100,w_220/v1499317439/logo_nchsqr.png');
   background-size: cover;
   background-position: -26px 0;
 }
@@ -61,7 +61,7 @@
 }
 
 .ch-img-3 {
-	background-image: url('http://res.cloudinary.com/djmk9vktk/image/upload/c_scale,w_292/v1499293736/BMW_Blue_e0nhnm.jpg');
+	background-image: url('http://res.cloudinary.com/mobewash/image/upload/c_scale,q_100,w_300/v1499317460/BMW_Blue_adrxuv.jpg');
   background-size: cover;
 }
 

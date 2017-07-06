@@ -33,9 +33,32 @@ loadAnimations();
 
 
 // Hiding Content
-console.log("Fading In");
 $(document).ready(function(){
     /* Scrolling Code */
+
+  var image = $('#test');
+  console.log("Image is: " + JSON.stringify(image, null, 4));
+  // document.images[0];
+  var downloadingImage = new Image();
+  downloadingImage.onload = function(){
+    // Async
+    // $('#test').attr('src', this.src);
+    //   image.src = this.src;
+    //   alert("Loaded!: " + this.src);
+      setTimeout(function() {
+        // $('.path').css({fill : 'white', transition: "4.0s"});
+    $('.landing-page').fadeOut(100,function(){
+        $(this).css('background-size', 'cover');
+        $('.landing-page').css('background','url('+ downloadingImage.src + ') no-repeat center center fixed').fadeIn(3000);
+        });
+      }, 3000);
+    // $('.landing-page').css('background-image', 'url(' + downloadingImage.src + ')');
+    // $('.landing-page').fadeIn('slow', 2.3);
+  };
+  downloadingImage.src = "http://res.cloudinary.com/mobewash/image/upload/c_scale,q_84,w_1500/v1498604418/landing-page-min_pqzgwc.png";
+
+
+
     setTimeout(function() {
       setTimeout(function() {
         // $('.path').css({fill : 'white', transition: "4.0s"});
@@ -43,12 +66,11 @@ $(document).ready(function(){
       setTimeout(function() {
             // Load Background and text
             var $img = "http://res.cloudinary.com/mobewash/image/upload/v1498604418/landing-page-min_pqzgwc.png";
-            $('.content').fadeIn(4000);
+            $('.content').fadeIn(1000);
             $('.landing-text').fadeIn(2000);
             $('.arrow').fadeIn(2000);
               setTimeout(function() {
-                $('.landing-page').css('background-image', 'url(' + $img + ')');
-                $('.landing-page').fadeIn('slow', 2.3);
+                $('.landing-page').css('background-image', 'url(' + downloadingImage.src + ')');
               //   $('.landing-page').fadeOut('slow', function()
               //     {
               //         $(this).css('background-image', 'url(' + $img + ')');
