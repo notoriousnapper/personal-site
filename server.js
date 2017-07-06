@@ -9,7 +9,7 @@ app.get('/',function(req,res){
 
 app.get('/resume', function(req, res){
   console.log("Resume downloaded");
-  var filename = "Resume-May-2017.pdf";
+  var filename = "Resume-July-2017.pdf";
   // var filename = req.originalUrl.replace(pattern , ""); // Rid of %20
   // Need regex, or only replaces first
   console.log("parse url" + filename);
